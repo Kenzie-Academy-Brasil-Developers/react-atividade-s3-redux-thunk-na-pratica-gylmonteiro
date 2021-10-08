@@ -1,9 +1,10 @@
 import { ADD_COMMENT } from "./actionTypes";
 const initialState = { name: "Kenzie", comments: [] };
 const userReducer = (state = initialState, action) => {
+  console.log(action);
   switch (action.type) {
     case ADD_COMMENT:
-      return action.update;
+      return action.updatedUser;
     default:
       return state;
   }
